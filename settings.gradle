@@ -2,3 +2,4 @@ rootProject.name = 'hihinakrock'
 
 include ':hinak-app-service'
 include ':hinak-order-service'
+include ':hinak-item-service'

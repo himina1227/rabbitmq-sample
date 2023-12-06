@@ -6,6 +6,7 @@
 
 - hinak-app-server: 유저 서비스
 - hinak-order-service: 주문 서비스
+- hinak-item-service
 
 ### 기술 스텍
 
