@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: hinak-eureka-server
+  profiles:
+    active: local
+server:
+  port: 9000
+  error:
+    include-binding-errors: always
+    include-message: always
+
+eureka:
+  server:
+    enable-self-preservation: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    disable-delta: true
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+    instance:
+      prefer-ip-address: true
