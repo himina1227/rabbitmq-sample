@@ -5,6 +5,7 @@ services:
     container_name: "mariadb"
     build:
       context: .
+#    image: mariadb:latest
     restart: always
     ports:
       - 3306:3306
@@ -13,6 +14,10 @@ services:
       - ./db/data:/var/lib/mysql
     environment:
       - TZ="Asia/Seoul"
+      - MARIADB_ROOT_PASSWORD=12341234
+      - MARIADB_USER=himina1227
+      - MARIADB_PASSWORD=12341234
+      - MARIADB_DATABASE=item
     networks:
       - hihinakrock
 networks:
